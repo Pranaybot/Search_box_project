@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Fruit Autocomplete</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="leftside">
+
+    <label class="labelexpanded">
+        <input type="radio" name="targetgroup" id="default">
+            <div class="radio-btns">
+                <img src="images/Moogle_default_theme.png" alt="Moogle default theme">
+                <p>Default</p>
+            </div>
+    </label>
+
+    <label class="labelexpanded">
+        <input type="radio" name="targetgroup" id="antarctica">
+            <div class="radio-btns">
+                <img src="images/antarctica_image.webp" alt="Antarctica">
+                <p>Antarctica</p>
+            </div>
+    </label>
+
+    <label class="labelexpanded">
+        <input type="radio" name="targetgroup" id="antigua">
+            <div class="radio-btns">
+                <img src="images/antigua_island.jpeg" alt="Antigua">
+                <p>Antigua</p>
+            </div>
+    </label>
+
+    <label class="labelexpanded">
+        <input type="radio" name="targetgroup" id="brazil">
+            <div class="radio-btns">
+                <img src="images/brazil_day.jpeg" alt="Brazil">
+                <p>Brazil</p>
+            </div>
+    </label>
+
+    <label class="labelexpanded">
+        <input type="radio" name="targetgroup" id="greece">
+            <div class="radio-btns">
+                <img src="images/greece_image.webp" alt="Greece">
+                <p>Greece</p>
+            </div>
+    </label>
+
+    <label class="labelexpanded">
+        <input type="radio" name="targetgroup" id="hawaii">
+            <div class="radio-btns">
+                <img src="images/hawaii_island.jpeg" alt="Hawaii">
+                <p>Hawaii</p>
+            </div>
+    </label>
+
+    <label class="labelexpanded">
+        <input type="radio" name="targetgroup" id="miami">
+            <div class="radio-btns">
+                <img src="images/miami_secret.jpeg" alt="Miami">
+                <p>Miami</p>
+            </div>
+    </label>
+
+    <label class="labelexpanded">
+        <input type="radio" name="targetgroup" id="sahara">
+            <div class="radio-btns">
+                <img src="images/saharan_oasis.jpeg" alt="Saharam oasis">
+                <p>Sahara</p>
+            </div>
+    </label>
+
+</div>
+<!-- partial:index.partial.html -->
+<div class="search-container">
+  <p id="search_engine_name">Moogle</p>
+  <div class="search_widgets_container">
+    <div class="fruit-container">
+        <input type="text" name="fruit" id="fruit" placeholder="Search fruit 🍎">
+    </div>
+        <div class="suggestions">
+            <ul></ul>
+        </div>
+    <button class="theme_button">Change theme</button>
+  </div>  
+</div>
+<!-- partial -->
+<script src="./toggle.js"></script>
+<script src="./themeStorage.js"></script>
+<script src="./searchBoxFilter.js"></script>
+</body>
+</html>
