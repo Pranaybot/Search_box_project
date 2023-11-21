@@ -81,6 +81,14 @@ function showSuggestions(results) {
         suggestionsContainer.style.visibility = "visible";
     }
 
+    if (suggestions.childElementCount === 0) {
+        input.style.borderRadius = "10px";
+        input.style.borderBottom = input.style.border;
+    } else {
+        input.style.borderRadius = "10px 10px 0px 0px";
+        input.style.borderBottom = "none";
+    }
+
 }
 
 function useSuggestion(e) {
