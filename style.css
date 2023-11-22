@@ -217,3 +217,7 @@
     text-decoration: none;
     display: block;
   }
+
+  .suggestion_highlight {
+    background-color: '#B0AEB6';
+  }
